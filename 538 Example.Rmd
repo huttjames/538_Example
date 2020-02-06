@@ -1,0 +1,20 @@
+---
+title: "538 Example"
+author: "James Hutt"
+date: "06/02/2020"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+library(tidyverse)
+library(gov.1005.data)
+```
+
+## R Markdown
+
+```{r}
+data("congress")
+head(congress)
+congress %>% arrange(desc(age))
+```
